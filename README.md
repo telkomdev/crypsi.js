@@ -6,7 +6,7 @@
 $ npm i crypsi.js
 ```
 
-Reactjs
+### Usage Reactjs
 ```javascript
 import { digest } from 'crypsi.js';
 
@@ -15,7 +15,7 @@ const handleSubmit = async (e) => {
 };
 ```
 
-### Browser globals
+### Usage Browser globals
 Please adjust the version `@0.0.0` based on https://github.com/telkomdev/crypsi.js/releases
 
 ```html
@@ -38,10 +38,6 @@ Now `crypsi` will be available in the global object
 - Python https://github.com/telkomdev/pycrypsi
 - NodeJs https://github.com/telkomdev/crypsi 
 - C# (.NET) https://github.com/telkomdev/NetCrypsi
-
-### Usage
-
-TODO
 
 ### Features
 - Asymmetric encryption with RSA
