@@ -1,8 +1,18 @@
 ## CrypsiJs (Crypto utilities for React and Web Browsers)
 
 ### Install
+
 ```shell
 $ npm i crypsi.js
+```
+
+### Browser globals
+Please adjust the version `@0.0.0` based on https://github.com/telkomdev/crypsi.js/releases
+
+```html
+<head>
+    <script src="https://cdn.jsdelivr.net/gh/telkomdev/crypsi.js@1.0.1/dist/crypsi.min.js"></script>
+</head>
 ```
 
 ### CrypsiJs is compatible with each other with the following `server side` libraries
