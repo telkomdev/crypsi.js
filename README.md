@@ -6,6 +6,15 @@
 $ npm i crypsi.js
 ```
 
+Reactjs
+```javascript
+import { digest } from 'crypsi.js';
+
+const handleSubmit = async (e) => {
+    console.log(await digest.sha256('wuriyanto')); // 7da544fa170151239b9886c0c905736fe3e8b07e68aefaba0633272aee47af87
+};
+```
+
 ### Browser globals
 Please adjust the version `@0.0.0` based on https://github.com/telkomdev/crypsi.js/releases
 
@@ -13,6 +22,15 @@ Please adjust the version `@0.0.0` based on https://github.com/telkomdev/crypsi.
 <head>
     <script src="https://cdn.jsdelivr.net/gh/telkomdev/crypsi.js@1.0.1/dist/crypsi.min.js"></script>
 </head>
+```
+
+Now `crypsi` will be available in the global object
+```javascript
+<script>
+    crypsi.digest.sha256('wuriyanto').then(function(res) {
+        console.log(res); // 7da544fa170151239b9886c0c905736fe3e8b07e68aefaba0633272aee47af87
+    });
+</script>
 ```
 
 ### CrypsiJs is compatible with each other with the following `server side` libraries
