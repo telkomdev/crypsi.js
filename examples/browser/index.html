@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://cdn.jsdelivr.net/gh/telkomdev/crypsi.js@1.0.0/dist/crypsi.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/telkomdev/crypsi.js@1.0.1/dist/crypsi.min.js"></script>
     </head>
     <body>
 
@@ -16,7 +16,7 @@
         var publicKey = '-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp3N/oEb01X0dNVVOeA5M\nrZ17lBHeRRYMCUZ6SRy+tivWtZZXnvbfTlSUpsakVVQznYF7dGSe90CbwLKD4uo0\nlIgIuTHEjWvi77ips7NRABUyp/Wb+f9gelGtCWI+Vr99MMWk28vAy35b3EeH7hMd\nj0JM/rdJgEJoUaWyHMcAbWvkPJM1oEC3aPXTve8iaF+4gnYIJNKYMsLV3VHl9ths\n4ysWUBHp/72Zesv+REBFWCUslngstucOgdUFYWc2m8Uj8U22fn6RLssrBH8uFrUa\nkTFGqlqJrF2nUs/114tTc8hW7FPjvVzeqXh5CIb8Rl5YTGh/Sx1dugQjlcKX5Uot\nMQIDAQAB\n-----END PUBLIC KEY-----\n';
        
         // digest Hash with SHA512
-        crypsi.digest.sha512DigestHex('wuriyanto').then(function(r) {
+        crypsi.digest.sha512('wuriyanto').then(function(r) {
             console.log(r);
         });
 
@@ -43,20 +43,20 @@
         });
 
         // Digest
-        crypsi.digest.sha512DigestHex('wuriyanto').then(function(res) {
+        crypsi.digest.sha512('wuriyanto').then(function(res) {
             console.log(res);
         });
 
-        crypsi.digest.sha512DigestHex(new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])).then(function(res) {
+        crypsi.digest.sha512(new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])).then(function(res) {
             console.log(res);
         });
         
         // HMAC
-        crypsi.hmac.sha512HmacHex(key256, 'wuriyanto').then(function(res) {
+        crypsi.hmac.sha512(key256, 'wuriyanto').then(function(res) {
             console.log(res);
         });
 
-        crypsi.hmac.sha512HmacHex(key256, new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])).then(function(res) {
+        crypsi.hmac.sha512(key256, new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])).then(function(res) {
             console.log(res);
         });
         

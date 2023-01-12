@@ -52,12 +52,12 @@ import {
       setDecryptedPassword(decoder.decode(decryptedPassword));
   
       // Digest
-      console.log(await digest.sha512DigestHex('wuriyanto'));
-      console.log(await digest.sha512DigestHex(new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])));
+      console.log(await digest.sha512('wuriyanto'));
+      console.log(await digest.sha512(new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])));
       
       // HMAC
-      console.log(await hmac.sha512HmacHex(key256, 'wuriyanto'));
-      console.log(await hmac.sha512HmacHex(key256, new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])));
+      console.log(await hmac.sha512(key256, 'wuriyanto'));
+      console.log(await hmac.sha512(key256, new Uint8Array([0x77, 0x75, 0x72, 0x69, 0x79, 0x61, 0x6E, 0x74, 0x6F])));
       
     }; 
   
