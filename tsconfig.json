@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": "./dist",
+      "outDir": "./build",
       "noImplicitAny": true,
       "module": "es6",
       "target": "es5",
@@ -11,6 +11,7 @@
     },
     "exclude": [
         "node_modules",
+        "build",
         "dist",
         "webpack.config.js"
     ]
