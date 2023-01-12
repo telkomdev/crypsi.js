@@ -2,8 +2,8 @@
   "name": "crypsi.js",
   "version": "1.0.0",
   "description": "CrypsiJs (Crypto utilities for React and Web Browsers)",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "build:ts": "npx tsc",
     "build:browser:dev": "webpack --mode=development",
