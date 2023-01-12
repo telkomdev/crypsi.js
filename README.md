@@ -1,5 +1,10 @@
 ## CrypsiJs (Crypto utilities for React and Web Browsers)
 
+### Install
+```shell
+$ npm i crypsi.js
+```
+
 ### CrypsiJs is compatible with each other with the following `server side` libraries
 - Golang https://github.com/telkomdev/go-crypsi
 - Python https://github.com/telkomdev/pycrypsi
