@@ -5,7 +5,7 @@ async function digest(alg: string, data: Uint8Array): Promise<Uint8Array> {
   return new Uint8Array(hash);
 }
 
-export async function sha1DigestHex(
+export async function sha1(
   data: string | Uint8Array
 ): Promise<string> {
   if (typeof data == 'string') {
@@ -17,7 +17,7 @@ export async function sha1DigestHex(
   return toHex(buf);
 }
 
-export async function sha256DigestHex(
+export async function sha256(
   data: string | Uint8Array
 ): Promise<string> {
   if (typeof data == 'string') {
@@ -29,7 +29,7 @@ export async function sha256DigestHex(
   return toHex(buf);
 }
 
-export async function sha384DigestHex(
+export async function sha384(
   data: string | Uint8Array
 ): Promise<string> {
   if (typeof data == 'string') {
@@ -41,7 +41,7 @@ export async function sha384DigestHex(
   return toHex(buf);
 }
 
-export async function sha512DigestHex(
+export async function sha512(
   data: string | Uint8Array
 ): Promise<string> {
   if (typeof data == 'string') {

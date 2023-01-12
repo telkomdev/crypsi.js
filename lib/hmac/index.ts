@@ -31,7 +31,7 @@ async function mac(
   return new Uint8Array(signature);
 }
 
-export async function sha1HmacHex(
+export async function sha1(
   key: string,
   data: Uint8Array
 ): Promise<string> {
@@ -44,7 +44,7 @@ export async function sha1HmacHex(
   return toHex(buf);
 }
 
-export async function sha256HmacHex(
+export async function sha256(
   key: string,
   data: Uint8Array
 ): Promise<string> {
@@ -57,7 +57,7 @@ export async function sha256HmacHex(
   return toHex(buf);
 }
 
-export async function sha384HmacHex(
+export async function sha384(
   key: string,
   data: Uint8Array
 ): Promise<string> {
@@ -70,7 +70,7 @@ export async function sha384HmacHex(
   return toHex(buf);
 }
 
-export async function sha512HmacHex(
+export async function sha512(
   key: string,
   data: Uint8Array
 ): Promise<string> {
