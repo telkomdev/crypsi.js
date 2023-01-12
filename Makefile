@@ -19,3 +19,8 @@ format:
 lint:
 	@echo 'execute linter'
 	npm run lint
+
+clean:
+	@echo 'remove output folders'
+	rm -rf build \
+	& rm -rf dist
