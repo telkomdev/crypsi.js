@@ -1,5 +1,5 @@
 {
-  "name": "crypsijs",
+  "name": "crypsi.js",
   "version": "1.0.0",
   "description": "CrypsiJs (Crypto utilities for React and Web Browsers)",
   "main": "dist/index.js",
