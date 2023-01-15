@@ -3,6 +3,7 @@
 #
 
 [![](https://data.jsdelivr.com/v1/package/npm/crypsi.js/badge)](https://www.jsdelivr.com/package/npm/crypsi.js)
+[![CrypsiJs CI](https://github.com/telkomdev/crypsi.js/actions/workflows/ci.yml/badge.svg)](https://github.com/telkomdev/crypsi.js/actions/workflows/ci.yml)
 
 ### Install
 
