@@ -1,5 +1,9 @@
 ## CrypsiJs (Crypto utilities for React and Web Browsers)
 
+#
+
+[![](https://data.jsdelivr.com/v1/package/npm/crypsi.js/badge)](https://www.jsdelivr.com/package/npm/crypsi.js)
+
 ### Install
 
 ```shell
@@ -20,7 +24,7 @@ Please adjust the version `@0.0.0` based on https://github.com/telkomdev/crypsi.
 
 ```html
 <head>
-    <script src="https://cdn.jsdelivr.net/gh/telkomdev/crypsi.js@1.0.1/dist/crypsi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/crypsi.js@1.0.1/dist/crypsi.min.js"></script>
 </head>
 ```
 
