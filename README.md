@@ -43,6 +43,7 @@ Now `crypsi` will be available in the global object
 - Python https://github.com/telkomdev/pycrypsi
 - NodeJs https://github.com/telkomdev/crypsi 
 - C# (.NET) https://github.com/telkomdev/NetCrypsi
+- Java/JVM https://github.com/telkomdev/jcrypsi
 
 ### Features
 - Asymmetric encryption with RSA
