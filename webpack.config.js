@@ -1,4 +1,5 @@
 var path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     entry: './index.ts',
@@ -19,5 +20,9 @@ module.exports = {
         filename: 'crypsi.min.js',
         library: 'crypsi'
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
+    optimization: {
+        minimize: true,
+        minimizer: [new TerserPlugin()],
+    },
 };
